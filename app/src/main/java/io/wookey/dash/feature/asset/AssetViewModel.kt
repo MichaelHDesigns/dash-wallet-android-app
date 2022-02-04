@@ -86,7 +86,7 @@ class AssetViewModel : BaseViewModel() {
                     walletDao.updateWallets(activeWallet.apply { balance = value })
                     val assetDao = AppDatabase.getInstance().assetDao()
                     val assets = assetDao.getAssetsByWalletId(activeWallet.id)
-                    val filter = assets.filter { it.token == "DASH" }
+                    val filter = assets.filter { it.token == "BUTK" }
                     if (filter.size == 1) {
                         assetDao.updateAsset(filter[0].apply {
                             balance = value

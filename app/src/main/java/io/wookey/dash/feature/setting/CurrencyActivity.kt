@@ -41,7 +41,7 @@ class CurrencyActivity : BaseTitleSecondActivity() {
 
         ExchangeRatesHelper.instance.rate.observe(this, Observer { value ->
             value?.let {
-                rate.text = "1 DASH ${it.formatMoney()}"
+                rate.text = "1 BUTK ${it.formatMoney()}"
             }
         })
 

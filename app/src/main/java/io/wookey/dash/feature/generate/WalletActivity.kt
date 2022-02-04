@@ -26,7 +26,7 @@ class WalletActivity : BaseActivity() {
         createWallet.background = BackgroundHelper.getButtonBackground(this, R.color.color_00A761)
         recoveryWallet.background = BackgroundHelper.getButtonBackground(this, R.color.color_002C6D)
 
-        sharedPreferences().putString("symbol", "DASH")
+        sharedPreferences().putString("symbol", "BUTK")
         createWallet.setOnClickListener {
             startActivity(Intent(this, GenerateWalletActivity::class.java).apply {
                 sharedPreferences().putInt("type", WALLET_CREATE)

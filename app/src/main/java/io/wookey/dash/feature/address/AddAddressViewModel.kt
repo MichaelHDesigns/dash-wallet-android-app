@@ -76,7 +76,7 @@ class AddAddressViewModel : BaseViewModel() {
                 enabled.value = false
                 withContext(Dispatchers.IO) {
                     AppDatabase.getInstance().addressBookDao().insertAddressBook(AddressBook().also {
-                        it.symbol = "DASH"
+                        it.symbol = "BUTK"
                         it.address = address.value!!
                         it.notes = notes.value!!
                     })

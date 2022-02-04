@@ -51,7 +51,7 @@ class Repository(val context: Application = App.instance) {
 
         val wallet = WalletHelper.instance.createWallet(walletFile, password)
         return wallet.apply {
-            symbol = "DASH"
+            symbol = "BUTK"
             name = walletName
         }
     }
@@ -68,7 +68,7 @@ class Repository(val context: Application = App.instance) {
         // creationTimeSeconds: Long = 1427610960L
         val wallet = WalletHelper.instance.recoveryWallet(walletFile, password, mnemonic, creationTimeSeconds)
         return wallet.apply {
-            symbol = "DASH"
+            symbol = "BUTK"
             name = walletName
         }
     }

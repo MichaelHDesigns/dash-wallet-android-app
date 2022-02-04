@@ -38,7 +38,7 @@ class AmountSetDialog : DialogFragment() {
         layoutParams.height = WindowManager.LayoutParams.WRAP_CONTENT
 
         editContainer.background = BackgroundHelper.getBackground(context, R.color.color_FFFFFF, dp2px(5))
-        symbol.text = "DASH"
+        symbol.text = "BUTK"
         amount.filters = arrayOf(PointLengthFilter(8))
         amount.background = BackgroundHelper.getEditBackground(context)
         currencyType.text = ExchangeRatesHelper.instance.currency

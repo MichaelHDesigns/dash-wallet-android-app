@@ -48,7 +48,7 @@ class ExchangeRatesHelper {
     fun loadRate() {
         var connection: HttpsURLConnection? = null
         try {
-            connection = URL("https://api.get-spark.com/CNY/USD").openConnection()as? HttpsURLConnection
+            connection = URL("https://api.exbitron.com/").openConnection()as? HttpsURLConnection
             connection?.run {
                 readTimeout = 3000
                 connectTimeout = 3000

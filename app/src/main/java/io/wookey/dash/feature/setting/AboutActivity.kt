@@ -22,7 +22,7 @@ class AboutActivity : BaseTitleSecondActivity() {
 
         version.setLeftString(getString(R.string.version_placeholder, versionName()))
         version.setOnClickListener {
-            openBrowser("https://wallet.wookey.io")
+            openBrowser("https://butcoin.tech")
         }
 
         agreement.setOnClickListener {

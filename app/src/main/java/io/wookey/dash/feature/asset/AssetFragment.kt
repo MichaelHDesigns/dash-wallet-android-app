@@ -95,7 +95,7 @@ class AssetFragment : BaseFragment() {
 
         AppDatabase.getInstance().walletDao().loadActiveWallet().observe(this, Observer { wallet ->
             wallet?.let {
-                centerTitle.text = "Dash"
+                centerTitle.text = "Butk"
                 walletName.text = it.name
                 address.text = it.address
 
@@ -152,7 +152,7 @@ class AssetFragment : BaseFragment() {
             fun bindViewHolder(asset: Asset, visibility: Boolean) {
                 with(asset) {
                     icon.setImage(token)
-                    title.text = "Dash"
+                    title.text = "Butk"
                     if (visibility) {
                         subTitle.text = balance.formatterAmountStrip()
                         hint.text = balance.formatRate()

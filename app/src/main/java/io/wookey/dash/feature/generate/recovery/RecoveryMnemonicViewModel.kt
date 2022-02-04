@@ -86,8 +86,8 @@ class RecoveryMnemonicViewModel : BaseViewModel() {
             try {
                 withContext(Dispatchers.IO) {
                     repository.check(value)
-                    // 1390095618L 2014-01-19T01:40:18Z 创世区块
-                    creationTimeSeconds = Math.max(1390095618L + 86400 * 7 + 1, creationTimeSeconds)
+                    // 1618800784L 2014-01-19T01:40:18Z 创世区块
+                    creationTimeSeconds = Math.max(1618800784L + 86400 * 7 + 1, creationTimeSeconds)
                     val wallet = repository.recoveryWallet(walletName, password, value, creationTimeSeconds)
                     repository.openWallet(walletName)
                     wallet.passwordPrompt = passwordPrompt ?: ""

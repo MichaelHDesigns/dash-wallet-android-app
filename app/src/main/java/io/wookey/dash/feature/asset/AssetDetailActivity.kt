@@ -51,7 +51,7 @@ class AssetDetailActivity : BaseTitleSecondActivity() {
 
         viewModel.activeAsset.observe(this, Observer { value ->
             value?.let {
-                setCenterTitle("Dash")
+                setCenterTitle("Butk")
                 icon.setImage(it.token)
                 asset.text = it.balance.formatterAmountStrip()
                 rate.text = it.balance.formatRate()

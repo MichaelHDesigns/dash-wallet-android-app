@@ -73,7 +73,7 @@ class TransactionDetailActivity : BaseTitleSecondActivity() {
         blockExplorer.setOnClickListener {
             IOSActionSheet.Builder(this)
                 .styleId(R.style.IOSActionSheetStyleCustom)
-                .otherButtonTitlesSimple("https://explorer.dash.org/tx/", "http://insight.dash.org/insight/tx/")
+                .otherButtonTitlesSimple("https://blocks.butcoin.tech/tx/", "http://explorer.butcoin.tech/tx/")
                 .itemClickListener { actionSheet, itemPosition, itemModel ->
                     openBrowser("${itemModel.itemTitle}${transaction.hash}")
                 }

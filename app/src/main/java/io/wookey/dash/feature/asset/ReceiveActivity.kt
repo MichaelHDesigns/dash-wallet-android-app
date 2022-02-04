@@ -89,7 +89,7 @@ class ReceiveActivity : BaseTitleSecondActivity() {
 
         viewModel.amount.observe(this, Observer { value ->
             value?.let {
-                amount.text = "$it DASH"
+                amount.text = "$it  BUTK"
             }
         })
         viewModel.rate.observe(this, Observer { value ->
